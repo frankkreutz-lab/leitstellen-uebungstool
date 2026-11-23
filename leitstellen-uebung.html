@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leitstellen-Übung</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
-
 :root{
   --bg:#12161a;
   --panel:#1b2127;
@@ -27,12 +25,12 @@ body{
   margin:0;
   background:var(--bg);
   color:var(--text);
-  font-family:'Inter',sans-serif;
+  font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
   min-height:100vh;
 }
-.mono{font-family:'IBM Plex Mono',monospace;}
+.mono{font-family:ui-monospace,Consolas,'Courier New',monospace;}
 .head{
-  font-family:'Barlow Condensed',sans-serif;
+  font-family:'Arial Narrow','Roboto Condensed',Arial,sans-serif;
   font-weight:600;
   letter-spacing:.03em;
 }
@@ -54,7 +52,7 @@ body{
 .tabs{display:flex;gap:2px;margin-bottom:14px;border-bottom:1px solid var(--line);}
 .tab{
   padding:9px 16px;cursor:pointer;color:var(--muted);
-  font-family:'Barlow Condensed',sans-serif;font-size:17px;letter-spacing:.02em;
+  font-family:'Arial Narrow','Roboto Condensed',Arial,sans-serif;font-size:17px;letter-spacing:.02em;
   border-bottom:3px solid transparent;
   text-transform:uppercase;
 }
@@ -72,7 +70,7 @@ body{
   margin-bottom:14px;
 }
 .panel h2{
-  font-family:'Barlow Condensed',sans-serif;
+  font-family:'Arial Narrow','Roboto Condensed',Arial,sans-serif;
   font-size:18px;text-transform:uppercase;letter-spacing:.03em;
   margin:0 0 12px;color:var(--muted);
   display:flex;align-items:center;gap:8px;
@@ -83,13 +81,13 @@ body{
 label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:.03em;}
 input[type=text], input[type=number], select, textarea{
   width:100%;background:var(--panel-2);border:1px solid var(--line);color:var(--text);
-  padding:8px 10px;border-radius:4px;font-family:'Inter',sans-serif;font-size:14px;margin-bottom:10px;
+  padding:8px 10px;border-radius:4px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;font-size:14px;margin-bottom:10px;
 }
 textarea{resize:vertical;min-height:44px;}
 button{
   background:var(--panel-2);border:1px solid var(--line);color:var(--text);
   padding:8px 14px;border-radius:4px;cursor:pointer;font-size:13px;font-weight:500;
-  font-family:'Inter',sans-serif;
+  font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
 }
 button:hover{border-color:var(--steel);}
 button.primary{background:var(--rot);border-color:var(--rot);color:#fff;}
@@ -106,7 +104,7 @@ tr:last-child td{border-bottom:none;}
 .chip{
   display:inline-flex;align-items:center;gap:6px;
   padding:4px 10px;border-radius:20px;font-size:12.5px;
-  font-family:'IBM Plex Mono',monospace;
+  font-family:ui-monospace,Consolas,'Courier New',monospace;
   border:1px solid var(--line);background:var(--panel-2);
 }
 .dot{width:8px;height:8px;border-radius:50%;flex:none;}
@@ -127,11 +125,11 @@ tr:last-child td{border-bottom:none;}
   border-radius:5px;padding:10px;margin-bottom:8px;background:var(--panel-2);
 }
 .aao-row .stichwort{
-  font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--rot);
+  font-family:ui-monospace,Consolas,'Courier New',monospace;font-weight:600;color:var(--rot);
   background:var(--rot-dim);padding:2px 8px;border-radius:4px;font-size:13px;white-space:nowrap;
 }
 .need-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;}
-.need-chip{font-size:11.5px;font-family:'IBM Plex Mono',monospace;background:var(--panel);border:1px solid var(--line);padding:2px 7px;border-radius:4px;color:var(--muted);}
+.need-chip{font-size:11.5px;font-family:ui-monospace,Consolas,'Courier New',monospace;background:var(--panel);border:1px solid var(--line);padding:2px 7px;border-radius:4px;color:var(--muted);}
 
 .incident{
   border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:5px;
@@ -139,14 +137,14 @@ tr:last-child td{border-bottom:none;}
 }
 .incident.closed{border-left-color:#4a5560;opacity:.6;}
 .incident-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;}
-.incident-head .stichwort{font-family:'IBM Plex Mono',monospace;color:var(--amber);font-weight:600;}
-.incident-time{font-family:'IBM Plex Mono',monospace;color:var(--muted);font-size:12.5px;}
+.incident-head .stichwort{font-family:ui-monospace,Consolas,'Courier New',monospace;color:var(--amber);font-weight:600;}
+.incident-time{font-family:ui-monospace,Consolas,'Courier New',monospace;color:var(--muted);font-size:12.5px;}
 .incident-ort{font-size:14px;margin:4px 0;}
 .incident-vehicles{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
 
 .checklist{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0;}
 .vcheck{
-  display:flex;align-items:center;gap:5px;font-size:12.5px;font-family:'IBM Plex Mono',monospace;
+  display:flex;align-items:center;gap:5px;font-size:12.5px;font-family:ui-monospace,Consolas,'Courier New',monospace;
   border:1px solid var(--line);border-radius:4px;padding:4px 8px;cursor:pointer;background:var(--panel);
 }
 .vcheck.picked{border-color:var(--gruen);background:var(--gruen-dim);}
@@ -154,7 +152,7 @@ tr:last-child td{border-bottom:none;}
 
 .log{
   background:#0d1013;border:1px solid var(--line);border-radius:6px;
-  padding:10px 12px;height:150px;overflow-y:auto;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9fb0bd;
+  padding:10px 12px;height:150px;overflow-y:auto;font-family:ui-monospace,Consolas,'Courier New',monospace;font-size:12px;color:#9fb0bd;
 }
 .log div{padding:2px 0;border-bottom:1px dashed #1e242a;}
 .log div b{color:var(--text);}
@@ -170,12 +168,12 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:12px 0;}
 
 .status-row{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px;}
 .status-btn{
-  font-family:'IBM Plex Mono',monospace;font-size:11px;padding:3px 7px;
+  font-family:ui-monospace,Consolas,'Courier New',monospace;font-size:11px;padding:3px 7px;
   border:1px solid var(--line);background:var(--panel);border-radius:4px;cursor:pointer;color:var(--muted);
 }
 .status-btn:hover{border-color:var(--steel);color:var(--text);}
 .status-btn.current{background:var(--steel);border-color:var(--steel);color:#fff;}
-.funkstatus-label{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--muted);}
+.funkstatus-label{font-family:ui-monospace,Consolas,'Courier New',monospace;font-size:11.5px;color:var(--muted);}
 .street-row{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:4px;padding:6px 10px;margin-bottom:6px;background:var(--panel-2);}
 .rueck-list{max-height:110px;overflow-y:auto;margin:6px 0;}
 .rueck-list div{font-size:12.5px;padding:2px 0;border-bottom:1px dashed var(--line);}
@@ -184,9 +182,11 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:12px 0;}
 .mini-form select, .mini-form input[type=text]{margin-bottom:0;padding:5px 8px;font-size:12.5px;width:auto;flex:1;min-width:100px;}
 .incident-section{border-top:1px dashed var(--line);margin-top:10px;padding-top:8px;}
 .incident-section h4{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);font-weight:500;}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--rot);color:#fff;padding:10px 18px;border-radius:6px;font-size:14px;z-index:99;display:none;max-width:90vw;}
 </style>
 </head>
 <body>
+<div id="toast" role="alert"></div>
 <div id="app">
 
   <div class="topbar">
@@ -262,7 +262,7 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:12px 0;}
       <div class="inline-form">
         <div>
           <label>Funkrufname / Kennung</label>
-          <input type="text" id="vName" placeholder="z.B. Florian Eisern 1/44">
+          <input type="text" id="vName" placeholder="z.B. Florian Musterstadt 1/46-1">
         </div>
         <div>
           <label>Typ</label>
@@ -270,7 +270,7 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:12px 0;}
         </div>
         <div>
           <label>Pager-Nr. (001–998, optional)</label>
-          <input type="text" id="vPagerCombo" placeholder="folgt erst mit den FirePagern ab September" maxlength="3" pattern="[0-9]*">
+          <input type="text" id="vPagerCombo" placeholder="z.B. 012" maxlength="3" pattern="[0-9]*">
         </div>
         <div style="flex:0;display:flex;align-items:flex-end;gap:6px;padding-bottom:10px;">
           <label style="display:flex;align-items:center;gap:5px;text-transform:none;font-size:13px;color:var(--text);margin:0;">
@@ -377,24 +377,96 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:12px 0;}
 
 <script>
 const STORAGE_KEY = 'leitstellen-uebung-state';
-const USE_CLAUDE_STORAGE = (typeof window.storage !== 'undefined' && window.storage && typeof window.storage.get === 'function');
-
 async function storageGet(key){
-  if(USE_CLAUDE_STORAGE){
-    return await window.storage.get(key);
-  }
   const v = localStorage.getItem(key);
   if(v === null) throw new Error('Kein Eintrag unter diesem Schlüssel (lokaler Speicher)');
   return {key, value:v, shared:false};
 }
 
 async function storageSet(key, value){
-  if(USE_CLAUDE_STORAGE){
-    return await window.storage.set(key, value);
-  }
   localStorage.setItem(key, value);
   return {key, value, shared:false};
 }
+function esc(s){
+  return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+let toastTimer = null;
+function toast(msg){
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.style.display = 'block';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>{ el.style.display = 'none'; }, 4500);
+}
+
+// Prüft und bereinigt einen Stand (aus Backup-Datei oder Browser-Speicher),
+// damit fehlerhafte oder manipulierte Dateien das Tool nicht zerschießen.
+function normalizeState(raw){
+  if(!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error('Kein gültiges Backup-Objekt');
+  const str = x => (typeof x === 'string') ? x : (x == null ? '' : String(x));
+  const arr = x => Array.isArray(x) ? x : [];
+  const obj = x => (x && typeof x === 'object' && !Array.isArray(x)) ? x : {};
+  const num = (x, d) => (typeof x === 'number' && isFinite(x)) ? x : d;
+  const s = {
+    orgName: str(raw.orgName),
+    vehicles: [], aao: [], streets: [], incidents: [], log: [],
+    startTime: num(raw.startTime, Date.now())
+  };
+  const vids = new Set();
+  arr(raw.vehicles).forEach(v=>{
+    v = obj(v);
+    const id = str(v.id);
+    if(!id || vids.has(id)) return;
+    vids.add(id);
+    const fs = [1,2,3,4,5,6].includes(v.funkstatus) ? v.funkstatus : 2;
+    const nv = {
+      id, name: str(v.name), type: str(v.type),
+      status: ['frei','einsatz','ausser'].includes(v.status) ? v.status : 'frei',
+      funkstatus: fs,
+      pagerCombo: str(v.pagerCombo).replace(/\D/g,'').slice(0,3),
+      extern: !!v.extern
+    };
+    if([1,2,3,4,6].includes(v.vorSprechwunsch)) nv.vorSprechwunsch = v.vorSprechwunsch;
+    s.vehicles.push(nv);
+  });
+  arr(raw.aao).forEach(a=>{
+    a = obj(a);
+    const id = str(a.id);
+    if(!id) return;
+    s.aao.push({id, stichwort: str(a.stichwort), bezeichnung: str(a.bezeichnung),
+      bedarf: arr(a.bedarf).filter(x=>typeof x === 'string')});
+  });
+  arr(raw.streets).forEach(x=>{
+    x = obj(x);
+    const id = str(x.id);
+    if(!id || !str(x.name)) return;
+    s.streets.push({id, name: str(x.name)});
+  });
+  arr(raw.incidents).forEach(i=>{
+    i = obj(i);
+    const id = str(i.id);
+    if(!id) return;
+    const staerke = {};
+    Object.keys(obj(i.staerke)).forEach(k=>{ staerke[k] = str(i.staerke[k]); });
+    s.incidents.push({
+      id, stichwort: str(i.stichwort), strasse: str(i.strasse), hausnr: str(i.hausnr),
+      anrufer: str(i.anrufer), meldebild: str(i.meldebild), ort: str(i.ort),
+      vehicleIds: arr(i.vehicleIds).filter(x=>typeof x === 'string'),
+      ruckmeldungen: arr(i.ruckmeldungen).map(r=>{ r = obj(r); return {time: str(r.time), von: str(r.von), text: str(r.text)}; }),
+      staerke,
+      start: num(i.start, Date.now()),
+      end: (typeof i.end === 'number' && isFinite(i.end)) ? i.end : null,
+      closed: !!i.closed
+    });
+  });
+  arr(raw.log).slice(0, 300).forEach(l=>{
+    l = obj(l);
+    s.log.push({time: str(l.time), text: str(l.text), kind: ['a','g'].includes(l.kind) ? l.kind : ''});
+  });
+  return s;
+}
+
 const DEFAULT_AAO = [
   { stichwort:'FEU 1', bezeichnung:'Mülleimer, Mülltonne, Müllcontainer im Freien, Unrat, BMA Störung', bedarf:[] },
   { stichwort:'FEU 2', bezeichnung:'PKW, Büro, Wald-Vegetation klein, Ausgelöste BMA, Kamin/Schornstein, Garage', bedarf:[] },
@@ -416,6 +488,7 @@ let state = {
 };
 let dispatchSelection = new Set();
 let saveTimer = null;
+let rueckDraft = {}; // angefangene Rückmeldungs-Texte, damit sie beim Neuzeichnen nicht verloren gehen
 let nachAlarmState = {}; // { [incidentId]: { open: bool, selection: Set } }
 
 const STATUS_DEFS = [
@@ -428,6 +501,8 @@ const STATUS_DEFS = [
 ];
 
 function applyFunkstatus(v, n){
+  if(n===5 && v.funkstatus!==5) v.vorSprechwunsch = v.funkstatus;
+  if(n!==5) delete v.vorSprechwunsch;
   v.funkstatus = n;
   if(n===1 || n===2) v.status = 'frei';
   else if(n===3 || n===4) v.status = 'einsatz';
@@ -435,9 +510,20 @@ function applyFunkstatus(v, n){
   // n===5 (Sprechwunsch) ändert die Verfügbarkeit nicht
 }
 
+// Regel: Von draußen (Status 3/4) geht es nicht direkt auf Status 2 (Wache),
+// sondern nur über Status 1. Status 6 geht jederzeit. Anpassbar über diese Liste.
+const NO_DIRECT_STATUS2_FROM = [3, 4];
+function checkFunkstatus(v, n){
+  const base = (v.funkstatus === 5 && v.vorSprechwunsch) ? v.vorSprechwunsch : v.funkstatus;
+  if(n === 2 && NO_DIRECT_STATUS2_FROM.includes(base)){
+    return `${v.name}: von Status ${base} nicht direkt auf Status 2 – erst Status 1 (frei über Funk) melden.`;
+  }
+  return null;
+}
+
 function statusButtonsHtml(v){
   return `<div class="status-row">` + STATUS_DEFS.map(s=>
-    `<button class="status-btn ${v.funkstatus===s.n?'current':''}" data-vid="${v.id}" data-status="${s.n}" title="${s.label}">${s.n}</button>`
+    `<button class="status-btn ${v.funkstatus===s.n?'current':''}" data-vid="${esc(v.id)}" data-status="${s.n}" title="${s.label}">${s.n}</button>`
   ).join('') + `</div><div class="funkstatus-label">Status ${v.funkstatus||'–'}: ${(STATUS_DEFS.find(s=>s.n===v.funkstatus)||{}).label || 'unbekannt'}</div>`;
 }
 
@@ -448,6 +534,8 @@ function bindStatusButtons(container){
       const v = state.vehicles.find(x=>x.id===btn.dataset.vid);
       const n = parseInt(btn.dataset.status,10);
       if(!v) return;
+      const problem = checkFunkstatus(v, n);
+      if(problem){ toast(problem); return; }
       applyFunkstatus(v, n);
       const label = STATUS_DEFS.find(s=>s.n===n).label;
       addLog(`${v.name} meldet Status ${n} – ${label}.`, n===4?'g':(n===6?'a':''));
@@ -469,8 +557,14 @@ async function loadState(){
   try{
     const res = await storageGet(STORAGE_KEY);
     if(res && res.value){
-      const parsed = JSON.parse(res.value);
-      state = Object.assign(state, parsed);
+      try{
+        state = normalizeState(JSON.parse(res.value));
+      }catch(err){
+        // Gespeicherter Stand unlesbar: Original sichern, damit der nächste Speichervorgang ihn nicht überschreibt
+        try{ localStorage.setItem(STORAGE_KEY + '-defekt-' + Date.now(), res.value); }catch(e2){}
+        console.error('Gespeicherter Stand beschädigt, wird ignoriert', err);
+        setTimeout(()=>toast('Der gespeicherte Stand war beschädigt und wurde nicht geladen (Kopie wurde gesichert). Bitte ein Backup einspielen.'), 300);
+      }
     }
   }catch(e){
     // Beim allerersten Start gibt es noch keinen gespeicherten Stand — das ist normal, kein Fehler.
@@ -515,9 +609,9 @@ function renderFleet(){
     const statusLabel = v.status === 'frei' ? 'Frei' : (v.status === 'einsatz' ? 'Im Einsatz' : 'Außer Dienst');
     tr.innerHTML = `
       <td><span class="chip"><span class="dot ${dotClass}"></span>${statusLabel}</span></td>
-      <td>${v.name}${v.extern ? ' <span class="need-chip" style="color:var(--amber);border-color:var(--amber);">extern</span>' : ''}</td>
-      <td class="mono">${v.type}</td>
-      <td><input type="text" class="mono" data-pager-combo value="${v.pagerCombo||''}" placeholder="z.B. 012" maxlength="3" pattern="[0-9]*" style="width:70px;margin:0;padding:4px 6px;font-size:12px;"></td>
+      <td>${esc(v.name)}${v.extern ? ' <span class="need-chip" style="color:var(--amber);border-color:var(--amber);">extern</span>' : ''}</td>
+      <td class="mono">${esc(v.type)}</td>
+      <td><input type="text" class="mono" data-pager-combo value="${esc(v.pagerCombo||'')}" placeholder="z.B. 012" maxlength="3" pattern="[0-9]*" style="width:70px;margin:0;padding:4px 6px;font-size:12px;"></td>
       <td>${statusButtonsHtml(v)}</td>
       <td class="row-actions"></td>
     `;
@@ -534,7 +628,9 @@ function renderFleet(){
     const delBtn = document.createElement('button');
     delBtn.className = 'small ghost';
     delBtn.textContent = 'Löschen';
-    delBtn.disabled = v.status === 'einsatz';
+    const inActive = state.incidents.some(i=>!i.closed && i.vehicleIds.includes(v.id));
+    delBtn.disabled = v.status === 'einsatz' || inActive;
+    if(inActive) delBtn.title = 'Fahrzeug ist einem laufenden Einsatz zugeteilt';
     delBtn.onclick = ()=>{
       if(!confirm(`Fahrzeug "${v.name}" wirklich löschen?`)) return;
       state.vehicles = state.vehicles.filter(x=>x.id!==v.id);
@@ -598,8 +694,8 @@ function renderAaoBedarfPicker(){
     return;
   }
   box.innerHTML = eligible.map(v=>`
-    <div class="vcheck ${aaoBedarfSelection.has(v.id)?'picked':''}" data-aao-vcheck="${v.id}">
-      ${v.name} <span class="small-muted">(${v.type})</span>
+    <div class="vcheck ${aaoBedarfSelection.has(v.id)?'picked':''}" data-aao-vcheck="${esc(v.id)}">
+      ${esc(v.name)} <span class="small-muted">(${esc(v.type)})</span>
     </div>
   `).join('');
   box.querySelectorAll('[data-aao-vcheck]').forEach(el=>{
@@ -621,11 +717,11 @@ function renderAao(){
     row.className = 'aao-row';
     const chips = (a.bedarf||[]).map(vid=>{
       const v = state.vehicles.find(x=>x.id===vid);
-      return v ? `<span class="need-chip">${v.name}</span>` : '';
+      return v ? `<span class="need-chip">${esc(v.name)}</span>` : '';
     }).filter(Boolean).join('');
     row.innerHTML = `
       <div style="flex:1;">
-        <span class="stichwort">${a.stichwort}</span> <b>${a.bezeichnung}</b>
+        <span class="stichwort">${esc(a.stichwort)}</span> <b>${esc(a.bezeichnung)}</b>
         <div class="need-list">${chips || '<span class="need-chip">kein Bedarf hinterlegt</span>'}</div>
       </div>
       <button class="small ghost" data-del>Löschen</button>
@@ -640,7 +736,7 @@ function renderAao(){
   const sel = document.getElementById('newAao');
   const current = sel.value;
   sel.innerHTML = '<option value="">— freier Einsatz (ohne AAO) —</option>' +
-    state.aao.map(a=>`<option value="${a.id}">${a.stichwort} — ${a.bezeichnung}</option>`).join('');
+    state.aao.map(a=>`<option value="${esc(a.id)}">${esc(a.stichwort)} — ${esc(a.bezeichnung)}</option>`).join('');
   if(current) sel.value = current;
   renderAaoBedarfPicker();
 }
@@ -696,7 +792,7 @@ function renderDispatchPicker(){
   freeVehicles.forEach(v=>{
     const el = document.createElement('div');
     el.className = 'vcheck' + (dispatchSelection.has(v.id) ? ' picked' : '');
-    el.innerHTML = `<span class="dot frei"></span>${v.name} <span class="small-muted">(${v.type}${v.extern?', extern':''})</span>`;
+    el.innerHTML = `<span class="dot frei"></span>${esc(v.name)} <span class="small-muted">(${esc(v.type)}${v.extern?', extern':''})</span>`;
     el.onclick = ()=>{
       if(dispatchSelection.has(v.id)) dispatchSelection.delete(v.id);
       else dispatchSelection.add(v.id);
@@ -762,7 +858,7 @@ function renderStreets(){
   sortedStreets.forEach(s=>{
     const row = document.createElement('div');
     row.className = 'street-row';
-    row.innerHTML = `<span>${s.name}</span><button class="small ghost" data-del>Löschen</button>`;
+    row.innerHTML = `<span>${esc(s.name)}</span><button class="small ghost" data-del>Löschen</button>`;
     row.querySelector('[data-del]').onclick = ()=>{
       state.streets = state.streets.filter(x=>x.id!==s.id);
       saveState(); renderAll();
@@ -770,12 +866,13 @@ function renderStreets(){
     list.appendChild(row);
   });
   const datalist = document.getElementById('strassenDatalist');
-  datalist.innerHTML = sortedStreets.map(s=>`<option value="${s.name}">`).join('');
+  datalist.innerHTML = sortedStreets.map(s=>`<option value="${esc(s.name)}">`).join('');
 }
 
 document.getElementById('btnAddStrasse').onclick = ()=>{
   const name = document.getElementById('strasseName').value.trim();
   if(!name) return;
+  if(state.streets.some(s=>s.name.toLowerCase() === name.toLowerCase())){ toast('Diese Straße gibt es schon.'); return; }
   state.streets.push({id: uid(), name});
   document.getElementById('strasseName').value = '';
   saveState(); renderAll();
@@ -795,6 +892,18 @@ document.getElementById('newStrasse').addEventListener('change', ()=>{
   }
 });
 
+function openPrintWindow(html, w, h){
+  const win = window.open('', '_blank', `width=${w},height=${h}`);
+  if(!win){ alert('Pop-up wurde vom Browser blockiert. Bitte Pop-ups für diese Seite erlauben.'); return; }
+  win.document.open();
+  win.document.write(html);
+  win.document.close();
+  let printed = false;
+  const go = ()=>{ if(printed) return; printed = true; try{ win.focus(); win.print(); }catch(e){} };
+  win.onload = go;
+  setTimeout(go, 400);
+}
+
 function printClosedIncidentsReport(){
   const closed = state.incidents.filter(i=>i.closed).slice().sort((a,b)=>a.start-b.start);
   const now = new Date();
@@ -805,16 +914,16 @@ function printClosedIncidentsReport(){
       const v = state.vehicles.find(x=>x.id===id);
       if(!v) return '';
       const s = (i.staerke && i.staerke[v.id]) ? ` — Stärke ${i.staerke[v.id]}` : '';
-      return `<li>${v.name}${s}</li>`;
+      return `<li>${esc(v.name)}${esc(s)}</li>`;
     }).filter(Boolean).join('') || '<li>(keine Fahrzeuge)</li>';
-    const ruckLines = (i.ruckmeldungen||[]).map(r=>`<div class="rueck-line">[${r.time}] <b>${r.von}</b>: ${r.text}</div>`).join('') || '<div class="rueck-line" style="color:#888;">Keine Rückmeldungen erfasst.</div>';
+    const ruckLines = (i.ruckmeldungen||[]).map(r=>`<div class="rueck-line">[${esc(r.time)}] <b>${esc(r.von)}</b>: ${esc(r.text)}</div>`).join('') || '<div class="rueck-line" style="color:#888;">Keine Rückmeldungen erfasst.</div>';
     return `
       <div class="report-block">
         <div class="report-head">
-          <span class="report-stichwort">${i.stichwort}</span>
+          <span class="report-stichwort">${esc(i.stichwort)}</span>
           <span>${new Date(i.start).toLocaleTimeString('de-DE')} – ${i.end ? new Date(i.end).toLocaleTimeString('de-DE') : '?'} Uhr (Dauer ${dur})</span>
         </div>
-        <div><b>Ort:</b> ${i.ort || '(kein Ort)'} &nbsp; <b>Meldebild:</b> ${i.meldebild || '—'} &nbsp; <b>Anrufer:</b> ${i.anrufer || '—'}</div>
+        <div><b>Ort:</b> ${esc(i.ort || '(kein Ort)')} &nbsp; <b>Meldebild:</b> ${esc(i.meldebild || '—')} &nbsp; <b>Anrufer:</b> ${esc(i.anrufer || '—')}</div>
         <div style="margin-top:4px;"><b>Fahrzeuge:</b><ul>${vehicleLines}</ul></div>
         <div style="margin-top:4px;"><b>Rückmeldungen:</b>${ruckLines}</div>
       </div>
@@ -835,18 +944,12 @@ function printClosedIncidentsReport(){
     .rueck-line{font-size:11.5px;margin-top:2px;}
     .empty-note{text-align:center;color:#666;font-style:italic;margin-top:60px;}
   </style></head><body>
-    <h1>EINSATZBERICHT — ÜBUNG${state.orgName ? ' — ' + state.orgName.toUpperCase() : ''}</h1>
+    <h1>EINSATZBERICHT — ÜBUNG${state.orgName ? ' — ' + esc(state.orgName.toUpperCase()) : ''}</h1>
     <div class="sub">Erstellt am ${now.toLocaleDateString('de-DE')} um ${now.toLocaleTimeString('de-DE')} Uhr — ${closed.length} abgeschlossene Einsätze</div>
     ${blocksHtml}
   </body></html>`;
 
-  const win = window.open('', '_blank', 'width=900,height=1000');
-  if(!win){ alert('Pop-up wurde vom Browser blockiert. Bitte Pop-ups für diese Seite erlauben.'); return; }
-  win.document.open();
-  win.document.write(html);
-  win.document.close();
-  win.onload = ()=>{ win.focus(); win.print(); };
-  setTimeout(()=>{ try{ win.focus(); win.print(); }catch(e){} }, 400);
+  openPrintWindow(html, 900, 1000);
 }
 document.getElementById('btnPrintClosed').onclick = printClosedIncidentsReport;
 
@@ -872,29 +975,23 @@ function printAlarmfax(i){
   </style></head><body>
     <div class="fax-header">
       <h1>ALARMFAX</h1>
-      <div>Übungsleitstelle${state.orgName ? ' — ' + state.orgName : ' — Jugendfeuerwehr'}</div>
+      <div>Übungsleitstelle${state.orgName ? ' — ' + esc(state.orgName) : ' — Jugendfeuerwehr'}</div>
     </div>
     <div class="fax-meta"><span>Datum: ${dateStr}</span><span>Uhrzeit: ${timeStr}</span><span>Fax-Nr. (Übung): 0000-ÜBUNG</span></div>
-    <div class="stichwort-box">${i.stichwort}</div>
+    <div class="stichwort-box">${esc(i.stichwort)}</div>
     <table>
-      <tr><td class="label">Einsatzort</td><td>${i.ort || '(kein Ort angegeben)'}</td></tr>
-      <tr><td class="label">Meldebild</td><td>${i.meldebild || '(kein Meldebild)'}</td></tr>
-      <tr><td class="label">Anrufer / Meldender</td><td>${i.anrufer || '(nicht angegeben)'}</td></tr>
+      <tr><td class="label">Einsatzort</td><td>${esc(i.ort || '(kein Ort angegeben)')}</td></tr>
+      <tr><td class="label">Meldebild</td><td>${esc(i.meldebild || '(kein Meldebild)')}</td></tr>
+      <tr><td class="label">Anrufer / Meldender</td><td>${esc(i.anrufer || '(nicht angegeben)')}</td></tr>
       <tr><td class="label">Alarmzeit</td><td>${new Date(i.start).toLocaleTimeString('de-DE')} Uhr</td></tr>
     </table>
     <div class="vehicles">
       <b>Alarmierte Einsatzmittel:</b>
-      <ul>${vehicleNames.length ? vehicleNames.map(n=>`<li>${n}</li>`).join('') : '<li>(keine Fahrzeuge alarmiert)</li>'}</ul>
+      <ul>${vehicleNames.length ? vehicleNames.map(n=>`<li>${esc(n)}</li>`).join('') : '<li>(keine Fahrzeuge alarmiert)</li>'}</ul>
     </div>
     <div class="footer">Dies ist eine Übungsalarmierung — kein echter Einsatz. Erstellt vom Leitstellen-Übungstool.</div>
   </body></html>`;
-  const win = window.open('', '_blank', 'width=800,height=900');
-  if(!win){ alert('Pop-up wurde vom Browser blockiert. Bitte Pop-ups für diese Seite erlauben.'); return; }
-  win.document.open();
-  win.document.write(html);
-  win.document.close();
-  win.onload = ()=>{ win.focus(); win.print(); };
-  setTimeout(()=>{ try{ win.focus(); win.print(); }catch(e){} }, 400);
+  openPrintWindow(html, 800, 900);
 }
 
 function fmtDuration(ms){
@@ -926,37 +1023,31 @@ function renderIncidents(){
       if(!i.staerke) i.staerke = {};
       const staerkeVal = i.staerke[v.id] || '';
       return `<div class="chip" style="flex-direction:column;align-items:flex-start;gap:2px;">
-                <span><span class="dot ${v.status==='frei'?'frei':(v.status==='ausser'?'ausser':'einsatz')}"></span>${v.name}</span>
+                <span><span class="dot ${v.status==='frei'?'frei':(v.status==='ausser'?'ausser':'einsatz')}"></span>${esc(v.name)}</span>
                 ${statusButtonsHtml(v)}
-                <button class="status-btn" data-pager-fire="${v.id}" style="margin-top:2px;">📟 Pager auslösen${v.pagerCombo ? ' — Nr. '+v.pagerCombo+' + GO' : ''}</button>
+                <button class="status-btn" data-pager-fire="${esc(v.id)}" style="margin-top:2px;" title="Löst nichts aus – vermerkt nur im Log, dass der Pager an der Basisstation ausgelöst wurde">📟 Pager-Auslösung vermerken${v.pagerCombo ? ' — Nr. '+esc(v.pagerCombo)+' + GO' : ''}</button>
                 <div style="margin-top:4px;display:flex;align-items:center;gap:4px;">
                   <span class="funkstatus-label">Stärke:</span>
-                  <input type="text" class="mono" data-staerke-input="${v.id}" value="${staerkeVal}" placeholder="185" maxlength="3" pattern="[0-9]*" inputmode="numeric" style="width:45px;margin:0;padding:3px 5px;font-size:11.5px;">
+                  <input type="text" class="mono" data-staerke-input="${esc(v.id)}" value="${esc(staerkeVal)}" placeholder="185" maxlength="3" pattern="[0-9]*" inputmode="numeric" style="width:45px;margin:0;padding:3px 5px;font-size:11.5px;">
                 </div>
               </div>`;
     }).join('');
 
     const ruckHtml = i.ruckmeldungen.length
-      ? i.ruckmeldungen.map(r=>`<div><span class="mono">[${r.time}]</span> <b>${r.von}</b>: ${r.text}</div>`).join('')
+      ? i.ruckmeldungen.map(r=>`<div><span class="mono">[${esc(r.time)}]</span> <b>${esc(r.von)}</b>: ${esc(r.text)}</div>`).join('')
       : '<div class="empty" style="padding:2px 0;">Noch keine Rückmeldungen.</div>';
 
-    const VEHICLE_TYPE_ORDER = {HLF:0, TLF:1, MTF:2};
     const vehicleOptions = i.vehicleIds
       .map(id=>state.vehicles.find(x=>x.id===id))
       .filter(Boolean)
-      .sort((a,b)=>{
-        const oa = VEHICLE_TYPE_ORDER[(a.type||'').toUpperCase()] ?? 99;
-        const ob = VEHICLE_TYPE_ORDER[(b.type||'').toUpperCase()] ?? 99;
-        return oa - ob;
-      })
-      .map(v=>`<option value="${v.name}">${v.name}</option>`).join('');
+      .map(v=>`<option value="${esc(v.name)}">${esc(v.name)}</option>`).join('');
 
     const freeVehicles = state.vehicles.filter(v=>v.status==='frei' && !i.vehicleIds.includes(v.id));
     let nachAlarmHtml = '';
     if(na.open){
       nachAlarmHtml = freeVehicles.length
         ? `<div class="checklist">` + freeVehicles.map(v=>
-            `<div class="vcheck ${na.selection.has(v.id)?'picked':''}" data-nid="${v.id}"><span class="dot frei"></span>${v.name} <span class="small-muted">(${v.type}${v.extern?', extern':''})</span></div>`
+            `<div class="vcheck ${na.selection.has(v.id)?'picked':''}" data-nid="${esc(v.id)}"><span class="dot frei"></span>${esc(v.name)} <span class="small-muted">(${esc(v.type)}${v.extern?', extern':''})</span></div>`
           ).join('') + `</div>
            <button class="small primary" data-confirm-nachalarm>Nachalarmieren</button>
            <button class="small ghost" data-cancel-nachalarm>Abbrechen</button>`
@@ -965,11 +1056,11 @@ function renderIncidents(){
 
     el.innerHTML = `
       <div class="incident-head">
-        <span><span class="stichwort">${i.stichwort}</span></span>
+        <span><span class="stichwort">${esc(i.stichwort)}</span></span>
         <span class="incident-time">seit ${fmtDuration(Date.now()-i.start)}</span>
       </div>
-      <div class="incident-ort">📍 ${i.ort || '(kein Ort)'} — <b>${i.meldebild || ''}</b></div>
-      <div class="small-muted">Anrufer: ${i.anrufer || '(nicht angegeben)'}</div>
+      <div class="incident-ort">📍 ${esc(i.ort || '(kein Ort)')} — <b>${esc(i.meldebild || '')}</b></div>
+      <div class="small-muted">Anrufer: ${esc(i.anrufer || '(nicht angegeben)')}</div>
       <div class="incident-vehicles">${vehicleBlocks}</div>
 
       <div class="incident-section">
@@ -1029,12 +1120,16 @@ function renderIncidents(){
       });
     });
 
+    const rueckInput = el.querySelector('[data-rueck-text]');
+    rueckInput.value = rueckDraft[i.id] || '';
+    rueckInput.addEventListener('input', ()=>{ rueckDraft[i.id] = rueckInput.value; });
     el.querySelector('[data-rueck-add]').onclick = ()=>{
       const von = el.querySelector('[data-rueck-von]').value;
       const textInput = el.querySelector('[data-rueck-text]');
       const text = textInput.value.trim();
       if(!text) return;
       i.ruckmeldungen.push({time: nowStr(), von, text});
+      delete rueckDraft[i.id];
       addLog(`Rückmeldung (${i.stichwort}): ${von} — ${text}`);
       saveState(); renderAll();
     };
@@ -1080,14 +1175,15 @@ function renderIncidents(){
     };
 
     el.querySelector('[data-close]').onclick = ()=>{
-      if(!confirm(`Einsatz "${i.stichwort} — ${i.ort}" wirklich beenden? Alle zugeteilten Fahrzeuge werden wieder freigegeben.`)) return;
+      if(!confirm(`Einsatz "${i.stichwort} — ${i.ort}" wirklich beenden? Zugeteilte Fahrzeuge werden frei (Status 1); Fahrzeuge mit Status 6 bleiben unverändert.`)) return;
       i.closed = true;
       i.end = Date.now();
       i.vehicleIds.forEach(id=>{
         const v = state.vehicles.find(x=>x.id===id);
-        if(v) applyFunkstatus(v, 2);
+        if(v && v.funkstatus !== 6 && v.funkstatus !== 2) applyFunkstatus(v, 1);
       });
-      addLog(`Einsatz beendet: ${i.stichwort} — ${i.ort}. Kräfte wieder frei.`, 'g');
+      delete rueckDraft[i.id];
+      addLog(`Einsatz beendet: ${i.stichwort} — ${i.ort}. Kräfte frei (Status 1) – zurück auf der Wache bitte Status 2 melden.`, 'g');
       delete nachAlarmState[i.id];
       saveState(); renderAll();
     };
@@ -1103,15 +1199,15 @@ function renderIncidents(){
       const v = state.vehicles.find(x=>x.id===id);
       if(!v) return '';
       const s = (i.staerke && i.staerke[v.id]) ? ` (${i.staerke[v.id]})` : '';
-      return v.name + s;
+      return esc(v.name + s);
     }).filter(Boolean).join(', ') || '—';
     el.innerHTML = `
       <div class="incident-head">
-        <span><span class="stichwort" style="color:var(--muted);background:transparent;">${i.stichwort}</span></span>
+        <span><span class="stichwort" style="color:var(--muted);background:transparent;">${esc(i.stichwort)}</span></span>
         <span class="incident-time">Dauer ${dur}</span>
       </div>
-      <div class="incident-ort">📍 ${i.ort || '(kein Ort)'} — ${i.meldebild || ''}</div>
-      <div class="small-muted">Anrufer: ${i.anrufer || '—'} · Kräfte: ${vehicleNames}</div>
+      <div class="incident-ort">📍 ${esc(i.ort || '(kein Ort)')} — ${esc(i.meldebild || '')}</div>
+      <div class="small-muted">Anrufer: ${esc(i.anrufer || '—')} · Kräfte: ${vehicleNames}</div>
     `;
     closedBox.appendChild(el);
   });
@@ -1119,7 +1215,7 @@ function renderIncidents(){
 
 function renderLog(){
   const box = document.getElementById('logBox');
-  box.innerHTML = state.log.map(l=>`<div class="${l.kind}"><b>${l.time}</b> — ${l.text}</div>`).join('') || '<div class="empty">Noch keine Einträge.</div>';
+  box.innerHTML = state.log.map(l=>`<div class="${esc(l.kind)}"><b>${esc(l.time)}</b> — ${esc(l.text)}</div>`).join('') || '<div class="empty">Noch keine Einträge.</div>';
 }
 
 function renderAll(){
@@ -1133,6 +1229,9 @@ function renderAll(){
 
 // ---------- TABS ----------
 document.querySelectorAll('.tab').forEach(tab=>{
+  tab.tabIndex = 0;
+  tab.setAttribute('role', 'tab');
+  tab.addEventListener('keydown', e=>{ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); tab.click(); } });
   tab.onclick = ()=>{
     document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
     document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
@@ -1164,6 +1263,7 @@ document.getElementById('btnSaveOrgName').onclick = ()=>{
 document.getElementById('btnFactoryReset').onclick = ()=>{
   if(!confirm('Wirklich ALLES löschen (Fuhrpark, AAO, Straßen, Einsätze, Log)? Das kann nicht rückgängig gemacht werden. Der Name eurer Wehr bleibt erhalten. Tipp: vorher ein Backup herunterladen!')) return;
   const keepOrgName = state.orgName;
+  nachAlarmState = {}; dispatchSelection = new Set(); rueckDraft = {};
   state = {
     orgName: keepOrgName,
     vehicles: [], aao: [], streets: [], incidents: [], log: [],
@@ -1179,7 +1279,7 @@ document.getElementById('btnFactoryReset').onclick = ()=>{
 // ---------- BACKUP EXPORT / IMPORT ----------
 function updateSavedInfo(){
   const el = document.getElementById('lastSavedInfo');
-  const mode = USE_CLAUDE_STORAGE ? 'Claude-Speicher' : 'lokaler Browser-Speicher';
+  const mode = 'lokaler Browser-Speicher';
   if(el) el.textContent = `Zuletzt gespeichert: ${new Date().toLocaleTimeString('de-DE')} (${mode})`;
 }
 
@@ -1208,15 +1308,23 @@ document.getElementById('fileImport').addEventListener('change', (e)=>{
   const reader = new FileReader();
   reader.onload = async (evt)=>{
     try{
-      const imported = JSON.parse(evt.target.result);
+      const next = normalizeState(JSON.parse(evt.target.result));
       if(!confirm('Aktuellen Stand mit dieser Backup-Datei überschreiben?')) return;
-      state = Object.assign({orgName:'',vehicles:[],aao:[],streets:[],incidents:[],log:[],startTime:Date.now()}, imported);
-      await storageSet(STORAGE_KEY, JSON.stringify(state));
-      document.getElementById('orgName').value = state.orgName || '';
-      renderOrgName();
-      addLog('Backup eingespielt.', 'g');
-      renderAll();
-      updateSavedInfo();
+      const previous = state;
+      state = next;
+      nachAlarmState = {}; dispatchSelection = new Set(); rueckDraft = {};
+      try{
+        document.getElementById('orgName').value = state.orgName || '';
+        renderOrgName();
+        addLog('Backup eingespielt.', 'g');
+        renderAll();
+        await storageSet(STORAGE_KEY, JSON.stringify(state));
+        updateSavedInfo();
+      }catch(err2){
+        state = previous;
+        renderAll();
+        alert('Die Backup-Datei konnte nicht übernommen werden. Der bisherige Stand wurde beibehalten.');
+      }
     }catch(err){
       alert('Diese Datei konnte nicht gelesen werden. Ist es eine gültige Backup-Datei?');
     }
