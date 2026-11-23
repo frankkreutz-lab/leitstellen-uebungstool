@@ -42,9 +42,9 @@ Entwickelt und erfolgreich eingesetzt bei der 24h-Übung der Jugendfeuerwehr Eis
 
 ## Einrichtung für eure Wehr
 
-1. Entweder die [Release-Datei](../../releases/latest) `leitstellen-uebung.html` herunterladen
-   und auf dem Übungs-Laptop im Browser öffnen (funktioniert offline, keine Installation),
-   oder die Seite oben direkt im Browser aufrufen.
+1. Entweder die Datei [`leitstellen-uebung.html`](leitstellen-uebung.html) herunterladen
+   (im Repo öffnen, dann „Download raw file“) und auf dem Übungs-Laptop im Browser öffnen
+   — funktioniert offline, keine Installation —, oder die Seite oben direkt im Browser aufrufen.
 2. Im Bereich **„Einrichtung“** ganz unten euren Wehrnamen eintragen und speichern
    — er erscheint dann im Titel sowie auf Alarmfax und Einsatzbericht
 3. Falls ihr eine Kopie mit Testdaten einer anderen Wehr erhalten habt: unter
