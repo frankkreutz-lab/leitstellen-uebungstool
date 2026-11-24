@@ -1,12 +1,13 @@
 # Leitstellen-Übungstool
 
-Ein einfaches, browserbasiertes Übungstool für die Jugendfeuerwehr, mit dem sich eine
-24-Stunden-Übung (oder jede andere Übung) realistisch als „Einsatzleitstelle“ simulieren
-lässt: Alarmierung nach AAO, Fuhrpark mit Funkstatus, Rückmeldungen, Nachalarmierung,
-Alarmfax-Druck und ein druckbarer Einsatzbericht am Ende.
+Ein einfaches, kostenloses Leitstellen-Simulationstool für den **Berufsfeuerwehrtag (BF-Tag)**,
+die 24-Stunden-Übung und andere Übungen der Jugendfeuerwehr. Es läuft im Browser, ohne Installation
+und ohne Server, und simuliert eine „Einsatzleitstelle“: Alarmierung nach AAO, Fuhrpark mit
+Funkstatus, Rückmeldungen, Nachalarmierung, Alarmfax-Druck und ein druckbarer Einsatzbericht
+am Ende.
 
-Entwickelt und erfolgreich eingesetzt bei der 24h-Übung der Jugendfeuerwehr Eisern
-(September 2026). Frei nutzbar für andere Jugendfeuerwehren — siehe [LICENSE](LICENSE).
+Entwickelt und erfolgreich eingesetzt bei der 24-Stunden-Übung (Berufsfeuerwehrtag) der
+Jugendfeuerwehr Eisern (September 2026). Frei nutzbar für andere Jugendfeuerwehren — siehe [LICENSE](LICENSE).
 
 **Direkt ausprobieren:** <https://frankkreutz-lab.github.io/leitstellen-uebungstool/>
 (läuft komplett in deinem Browser, es werden keine Daten übertragen)
