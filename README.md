@@ -10,7 +10,8 @@ Entwickelt und erfolgreich eingesetzt bei der 24-Stunden-Übung (Berufsfeuerwehr
 Jugendfeuerwehr Eisern (September 2026). Frei nutzbar für andere Jugendfeuerwehren — siehe [LICENSE](LICENSE).
 
 **Direkt ausprobieren:** <https://frankkreutz-lab.github.io/leitstellen-uebungstool/>
-(läuft komplett in deinem Browser, es werden keine Daten übertragen)
+(läuft komplett in deinem Browser, die Daten bleiben lokal — einzige Ausnahme ist der optionale
+Straßenimport, siehe [Datenspeicherung und Datenschutz](#datenspeicherung-und-datenschutz))
 
 ![Einsatzleitstelle mit laufendem Einsatz](docs/screenshots/01-einsatzleitstelle.png)
 
@@ -25,7 +26,8 @@ Jugendfeuerwehr Eisern (September 2026). Frei nutzbar für andere Jugendfeuerweh
   Die Regel lässt sich in der Datei anpassen (`NO_DIRECT_STATUS2_FROM`).
 - **AAO**: eigene Alarmstichworte mit Fahrzeugbedarf anlegen (ein Satz gängiger
   Feuerwehr-Stichworte ist als Vorlage vorausgefüllt, aber frei anpassbar)
-- **Straßenverzeichnis**: Straßen für Autovervollständigung bei der Alarmierung
+- **Straßenverzeichnis**: Straßen für Autovervollständigung bei der Alarmierung — per Klick aus
+  OpenStreetMap laden (Stadt und Stadtteil eingeben, Vorschau mit Auswahl) oder als Liste einfügen
 - Rückmeldungen, Stärke-Meldungen und Nachalarmierung pro laufendem Einsatz
 - Alarmfax und Einsatzbericht als Druck-/PDF-Ansicht
 - Pager-Nummern pro Fahrzeug hinterlegbar (für Funkmeldeempfänger wie FirePager,
@@ -54,7 +56,8 @@ Jugendfeuerwehr Eisern (September 2026). Frei nutzbar für andere Jugendfeuerweh
 4. Unter dem Reiter **Fuhrpark** eure Fahrzeuge anlegen
 5. Unter **AAO** eure Alarmstichworte mit Fahrzeugbedarf anlegen
 6. Unter **Straßen** euer Straßenverzeichnis anlegen (oder einfach während der
-   Übung „on the fly“ neue Straßen bestätigen)
+   Übung „on the fly“ neue Straßen bestätigen). Am schnellsten geht es mit **„Straßen automatisch laden“**:
+   Stadt und optional Stadtteil eingeben, passenden Treffer wählen, Liste prüfen, übernehmen
 7. Vor der eigentlichen Übung: **Datensicherung → Backup herunterladen**, damit
    ihr die Einrichtung nicht verliert, falls der Browser-Speicher mal leer sein
    sollte
@@ -64,6 +67,11 @@ Jugendfeuerwehr Eisern (September 2026). Frei nutzbar für andere Jugendfeuerweh
 Alle Daten (Fuhrpark, AAO, Straßen, Einsätze, Log) werden **lokal im Browser**
 gespeichert (`localStorage`), es läuft kein Server und es werden keine Daten irgendwo
 hochgeladen. Das Tool lädt auch keine Schriften oder Skripte von fremden Servern nach.
+
+**Einzige Ausnahme:** Nur wenn du im Reiter *Straßen* auf „Ort suchen“ bzw. „Straßen laden“ klickst, werden
+der eingegebene Ortsname und technisch bedingt deine IP-Adresse an Dienste von OpenStreetMap übertragen
+(Nominatim und Overpass, ersatzweise Photon von Komoot). Ohne diesen Klick findet keine Verbindung statt.
+Die Straßendaten stammen von OpenStreetMap (© OpenStreetMap-Mitwirkende, [ODbL](https://opendatacommons.org/licenses/odbl/)).
 Wechselt ihr den Browser oder den Rechner oder löscht den Browser-Speicher, sind die
 Daten weg — deshalb regelmäßig ein Backup (JSON-Datei) herunterladen, vor allem kurz
 vor der Übung.
@@ -78,6 +86,9 @@ Backups aus Quellen ein, denen ihr vertraut.
 - Kein automatisches Auslösen von Funkmeldeempfängern (Pager) — die Pager-Nummer
   wird nur angezeigt, ausgelöst wird weiterhin manuell an der Basisstation
 - Die vorausgefüllte AAO ist eine Vorlage und muss an eure Wehr angepasst werden
+- Der Straßenimport nutzt OpenStreetMap-Daten: nicht immer vollständig, Schreibweisen können von eurem
+  Leitstellen-Straßenverzeichnis abweichen, und bei Stadtteilen ohne Gebietsgrenze wird ein Umkreis von
+  1,5 km verwendet (Straßen des Nachbarorts bitte in der Vorschau abwählen)
 
 ## Anpassungen & Mitmachen
 
